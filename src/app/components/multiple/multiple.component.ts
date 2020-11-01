@@ -49,10 +49,11 @@ export class MultipleComponent implements OnInit {
     }
 
     this._dataService.post(Global.base_api_url + 'multiple.php', formData).subscribe(res => {
-      console.log(res)
-      alert('Picture Upload Succefully');
-    }, error => {
-      alert('Picture Upload Failed');
+      debugger
+      console.log(res);
+      alert('Data Upload Successfully');
+    }, err => {
+      alert('Data not upload');
     })
   }
 
